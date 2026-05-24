@@ -18,6 +18,12 @@ namespace Gelir_Gider_Takip_Otomasyonu
         {
             InitializeComponent();
 
+            txtSifre.UseSystemPasswordChar = false;
+
+            txtSifre.Text = "Şifre";
+
+            txtSifre.ForeColor = Color.Gray;
+
             this.StartPosition =
                 FormStartPosition.CenterScreen;
 
@@ -32,9 +38,11 @@ namespace Gelir_Gider_Takip_Otomasyonu
 
             btnGiris.FlatAppearance.BorderSize = 0;
 
-            txtSifre.Text = "Şifre";
-            txtSifre.ForeColor = Color.Gray;
-            txtSifre.UseSystemPasswordChar = false;
+
+            txtKullaniciAdi.Text = "Kullanıcı Adı";
+            txtKullaniciAdi.ForeColor = Color.Gray;
+
+
         }
 
         private void btnGiris_Click_1(object sender, EventArgs e)
@@ -92,6 +100,30 @@ namespace Gelir_Gider_Takip_Otomasyonu
             if (txtSifre.Text == "")
             {
                 txtSifre.UseSystemPasswordChar = false;
+
+                txtSifre.Text = "Şifre";
+
+                txtSifre.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtSifre_Enter(object sender, EventArgs e)
+        {
+            if (txtSifre.Text == "Şifre")
+            {
+                txtSifre.Text = "";
+
+                txtSifre.ForeColor = Color.Black;
+
+                txtSifre.PasswordChar = '*';
+            }
+        }
+
+        private void txtSifre_Leave(object sender, EventArgs e)
+        {
+            if (txtSifre.Text.Trim() == "")
+            {
+                txtSifre.PasswordChar = '\0';
 
                 txtSifre.Text = "Şifre";
 
