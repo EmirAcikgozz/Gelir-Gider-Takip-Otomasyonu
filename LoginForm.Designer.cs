@@ -133,11 +133,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label5.Location = new System.Drawing.Point(351, 87);
+            this.label5.Location = new System.Drawing.Point(359, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 25);
+            this.label5.Size = new System.Drawing.Size(133, 25);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Login to your account";
+            this.label5.Text = "Kullanıcı Girişi";
             // 
             // pictureBox3
             // 
@@ -171,6 +171,7 @@
             this.Controls.Add(this.panelSol);
             this.Controls.Add(this.txtKullaniciAdi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı Girişi";

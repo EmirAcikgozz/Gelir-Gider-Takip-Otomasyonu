@@ -257,6 +257,7 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RaporForm";
             this.Text = "RaporForm";
             this.groupBox6.ResumeLayout(false);
